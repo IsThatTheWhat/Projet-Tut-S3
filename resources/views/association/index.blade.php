@@ -107,9 +107,9 @@
                         </ul>
                     </div>
                     <div class="card-content grey lighten-4">
-                        <div id="test4">Test 1</div>
+                        <div id="test4">Ici le mot du pres</div>
                         <div id="test5">Test 2</div>
-                        <div id="test6">Test 3</div>
+                        <div id="test6">Ici les contacts</div>
                     </div>
                 </div>
                 <div class="card horizontal">
