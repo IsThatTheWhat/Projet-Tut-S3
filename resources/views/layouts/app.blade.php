@@ -14,29 +14,38 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="css/myCss.css">
 
+    <!-- Other CSS -->
+    @yield('css')
+
 
 </head>
 <body>
     @section('navbar')
         <header>
-            <nav>
-                <div class="nav-wrapper container">
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                    <ul class="left">
-                        <a href="#!" class="brand-logo">Proj Tut</a>
-                    </ul>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="sass.html">Associations</a></li>
-                        <li><a href="badges.html">Evenements</a></li>
-                        <li><a href="collapsible.html">Départements</a></li>
-                    </ul>
-                    <ul class="side-nav" id="mobile-demo">
-                        <li><a href="sass.html">Associations</a></li>
-                        <li><a href="badges.html">Evenements</a></li>
-                        <li><a href="collapsible.html">Départements</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper container">
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul class="left">
+                            <a href="#!" class="brand-logo">Proj Tut</a>
+                        </ul>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="/">Associations</a></li>
+                            <li><a href="badges.html">Evenements</a></li>
+                            <li><a href="collapsible.html">Départements</a></li>
+                            <li><a href="collapsible.html">Login</a></li>
+                            <li><a href="collapsible.html">Register</a></li>
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a href="sass.html">Associations</a></li>
+                            <li><a href="badges.html">Evenements</a></li>
+                            <li><a href="collapsible.html">Départements</a></li>
+                            <li><a href="collapsible.html">Login</a></li>
+                            <li><a href="collapsible.html">Register</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
     @show
 
@@ -46,24 +55,33 @@
     <footer class="page-footer">
         <div class="container">
             <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <div class="col l4 s12 center-align">
+                    <h5 class="white-text">Cadre Du Projet</h5>
+                    <p class="grey-text text-lighten-4">Ce site a été réalisé dans le cadre d'un projet tutoré en S3-S4 à l'IUT informatique de Belfort en 2017. </p>
                 </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
+                <div class="col l4 s12 center-align">
+                    <h5 class="white-text">A Propos</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        <li><a href="" class="grey-text text-lighten-3"><i class="tiny material-icons">person</i> Association</a></li>
+                        <li><a href="" class="grey-text text-lighten-3"><i class="tiny material-icons">person</i> Evénements</a></li>
+                        <li><a href="" class="grey-text text-lighten-3"><i class="tiny material-icons">person</i> Departements</a></li>
+                        <li><a href="{{ route('profile') }}" class="grey-text text-lighten-3"><i class="tiny material-icons">person</i> Profil</a></li>
+                        <li><a href="{{ route('contacts') }}" class="grey-text text-lighten-3"><i class="tiny material-icons">person</i> Equipe</a></li>
+                    </ul>
+                </div>
+                <div class="col l4 s12 center-align">
+                    <h5 class="white-text">Contact</h5>
+                    <ul>
+                        <li class="grey-text text-lighten-3"><i class="tiny material-icons">home</i> IUT de Belfort-Montbéliard</li>
+                        <li class="grey-text text-lighten-3"><i class="tiny material-icons">location_on</i> 19 av. du Maréchal Juin</li>
+                        <li class="grey-text text-lighten-3"><i class="tiny material-icons">email</i> ced-slach@yahoo.bolivie</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2014 Copyright Text
+                © 2017 Copyright Text
                 <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
         </div>
